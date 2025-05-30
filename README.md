@@ -79,19 +79,3 @@ O aplicativo vem com alguns dados de teste pré-definidos no banco de dados para
     * **Usuário:** `user`
     * **Senha:** `user123`
 
-Você também pode registrar novos usuários e administradores (após o login de um admin existente, a funcionalidade de adicionar/editar papéis não está na UI, mas pode ser adicionada via console do Room para testes, ou você pode modificar o código de registro para permitir escolher o papel).
-
-## 🖼️ Capturas de Tela (Screenshots)
-
-## 🛠️ Próximos Passos e Possíveis Melhorias
-
-* **Persistência de Sessão**: Manter o usuário logado mesmo após o fechamento do aplicativo (salvando credenciais no DataStore).
-* **Validação de Entrada da UI**: Implementar validações mais robustas e feedback visual instantâneo para campos de formulário.
-* **Tratamento de Erros Aprimorado**: Utilizar `Snackbar` para mensagens de erro/sucesso temporárias e telas de erro dedicadas.
-* **Recuperação de Senha**: Implementar um fluxo "Esqueci a Senha" (requereria um backend).
-* **Internacionalização**: Adicionar suporte a múltiplos idiomas.
-* **Testes**: Desenvolver testes unitários, de integração e de UI para garantir a estabilidade e qualidade do código.
-* **UX/UI**: Refinar a interface para uma experiência de usuário ainda mais fluida e intuitiva.
-* **Migrações de Banco de Dados**: Implementar migrações de Room para preservar dados do usuário em futuras atualizações do esquema do banco de dados.
-
----
