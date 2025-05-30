@@ -46,44 +46,54 @@ O projeto segue rigorosamente a arquitetura **MVVM (Model-View-ViewModel)**, pro
 ## 📂 Estrutura do Projeto
 
 A estrutura do projeto é organizada em pacotes lógicos para facilitar a manutenção e escalabilidade:
-
-├── LivrariaAppV2
-├── data
-│   ├── local                  // Gerenciamento de preferências locais (FavoriteManager)
-│   │   └── FavoriteManager.kt
-│   ├── model                  // Definição das classes de dados (Book, User)
-│   │   ├── Book.kt
-│   │   └── User.kt
-│   ├── AppDatabase.kt         // Configuração do banco de dados Room
-│   ├── BookDao.kt             // Interface DAO para operações de livros
-│   └── UserDao.kt             // Interface DAO para operações de usuários
-├── navigation
-│   └── AppNavHost.kt          // Configuração do grafo de navegação
-├── repository
-│   ├── AuthRepository.kt      // Repositório para autenticação de usuários
-│   └── BookRepository.kt      // Repositório para operações de livros
-├── ui
-│   ├── theme                  // Definições de tema e cores
-│   │   ├── Color.kt
-│   │   ├── Theme.kt
-│   │   └── Type.kt
-│   ├── AddBookScreen.kt       // Tela para adicionar novos livros
-│   ├── BookCard.kt            // Componente reutilizável para exibir um livro
-│   ├── CatalogScreen.kt       // Tela de listagem do catálogo de livros
-│   ├── EditBookScreen.kt      // Tela para visualizar/editar detalhes do livro
-│   ├── FavoriteBooksScreen.kt // Tela para exibir livros favoritos
-│   ├── HomeScreen.kt          // Tela principal após o login
-│   ├── LoginScreen.kt         // Tela de login do usuário
-│   ├── RegisterScreen.kt      // Tela de registro de novo usuário
-│   └── SearchBar.kt           // Componente de barra de busca
-├── viewmodel
-│   ├── AuthViewModel.kt       // ViewModel para lógica de autenticação
-│   ├── AuthViewModelFactory.kt// Factory para AuthViewModel
-│   ├── BookViewModel.kt       // ViewModel para lógica de livros e favoritos
-│   └── BookViewModelFactory.kt// Factory para BookViewModel
-├── LivrariaAppV2Application.kt// Classe Application para configurações globais
-└── MainActivity.kt            // Atividade principal do aplicativo
-
+.
+├── app
+│   └── src
+│       └── main
+│           └── java
+│               └── com
+│                   └── example
+│                       └── LivrariaAppV2
+│                           ├── data
+│                           │   ├── local                  # Gerenciamento de preferências locais (FavoriteManager)
+│                           │   │   └── FavoriteManager.kt
+│                           │   ├── model                  # Definição das classes de dados (Book, User)
+│                           │   │   ├── Book.kt
+│                           │   │   └── User.kt
+│                           │   ├── AppDatabase.kt         # Configuração do banco de dados Room
+│                           │   ├── BookDao.kt             # Interface DAO para operações de livros
+│                           │   └── UserDao.kt             # Interface DAO para operações de usuários
+│                           ├── navigation
+│                           │   └── AppNavHost.kt          # Configuração do grafo de navegação
+│                           ├── repository
+│                           │   ├── AuthRepository.kt      # Repositório para autenticação de usuários
+│                           │   └── BookRepository.kt      # Repositório para operações de livros
+│                           ├── ui
+│                           │   ├── theme                  # Definições de tema e cores
+│                           │   │   ├── Color.kt
+│                           │   │   ├── Theme.kt
+│                           │   │   └── Type.kt
+│                           │   ├── AddBookScreen.kt       # Tela para adicionar novos livros
+│                           │   ├── BookCard.kt            # Componente reutilizável para exibir um livro
+│                           │   ├── CatalogScreen.kt       # Tela de listagem do catálogo de livros
+│                           │   ├── EditBookScreen.kt      # Tela para visualizar/editar detalhes do livro
+│                           │   ├── FavoriteBooksScreen.kt # Tela para exibir livros favoritos
+│                           │   ├── HomeScreen.kt          # Tela principal após o login
+│                           │   ├── LoginScreen.kt         # Tela de login do usuário
+│                           │   ├── RegisterScreen.kt      # Tela de registro de novo usuário
+│                           │   └── SearchBar.kt           # Componente de barra de busca
+│                           ├── viewmodel
+│                           │   ├── AuthViewModel.kt       # ViewModel para lógica de autenticação
+│                           │   ├── AuthViewModelFactory.kt# Factory para AuthViewModel
+│                           │   ├── BookViewModel.kt       # ViewModel para lógica de livros e favoritos
+│                           │   └── BookViewModelFactory.kt# Factory para BookViewModel
+│                           ├── LivrariaAppV2Application.kt# Classe Application para configurações globais
+│                           └── MainActivity.kt            # Atividade principal do aplicativo
+├── build.gradle.kts (project)
+├── app
+│   └── build.gradle.kts (app)
+├── libs.versions.toml
+└── ... (outros arquivos de configuração e recursos)
 
 ## ⚙️ Como Configurar e Rodar o Projeto
 
