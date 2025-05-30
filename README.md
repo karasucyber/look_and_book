@@ -1,6 +1,3 @@
-# 📚 LivrariaAppV2
-
-![Capa do Aplicativo - Exemplo da Home Screen](https://via.placeholder.com/600x300?text=Home+Screen) ![Capa do Aplicativo - Exemplo da Login Screen](https://via.placeholder.com/600x300?text=Login+Screen) O LivrariaAppV2 é um aplicativo Android moderno que simula um sistema de livraria, permitindo que usuários naveguem por um catálogo de livros, gerenciem favoritos e, para administradores, realizem o gerenciamento completo do acervo. Construído com Kotlin e Jetpack Compose, o aplicativo exemplifica as melhores práticas de desenvolvimento Android com uma arquitetura MVVM, persistência de dados local com Room e um sistema de autenticação robusto.
 
 ## ✨ Funcionalidades
 
